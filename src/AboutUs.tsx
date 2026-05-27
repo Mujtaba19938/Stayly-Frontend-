@@ -89,13 +89,13 @@ export default function AboutUs() {
 
 function ValueCard({ icon, title, description }: { icon: React.ReactNode, title: string, description: string }) {
   return (
-    <div className="bg-gray-50 rounded-2xl p-6 border border-gray-100/50 flex flex-col items-start gap-4">
-      <div className="w-12 h-12 rounded-xl bg-white border border-gray-100 flex items-center justify-center shrink-0 shadow-sm">
+    <div className="bg-gray-50 dark:bg-slate-900/60 rounded-2xl p-6 border border-gray-100/50 dark:border-slate-800/40 flex flex-col items-start gap-4">
+      <div className="w-12 h-12 rounded-xl bg-white dark:bg-slate-800 border border-gray-100 dark:border-slate-700/50 flex items-center justify-center shrink-0 shadow-sm">
         {icon}
       </div>
       <div>
-        <h3 className="font-bold text-gray-900 mb-2">{title}</h3>
-        <p className="text-sm text-gray-500 leading-relaxed">{description}</p>
+        <h3 className="font-bold text-gray-900 dark:text-slate-100 mb-2">{title}</h3>
+        <p className="text-sm text-gray-500 dark:text-slate-400 leading-relaxed">{description}</p>
       </div>
     </div>
   );

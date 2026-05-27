@@ -32,32 +32,32 @@ export default function ContactUs() {
         </div>
 
         {/* Form Container */}
-        <div className="lg:col-span-2 bg-white rounded-3xl p-8 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-gray-100">
+        <div className="lg:col-span-2 bg-white dark:bg-slate-900/60 rounded-3xl p-8 shadow-[0_8px_30px_rgb(0,0,0,0.04)] dark:shadow-[0_8px_30px_rgba(0,0,0,0.3)] border border-gray-100 dark:border-slate-800/40">
           <form className="space-y-6">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="space-y-2">
-                <label className="text-sm font-semibold text-gray-900">First Name</label>
-                <input type="text" placeholder="John" className="w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition-all" />
+                <label className="text-sm font-semibold text-gray-900 dark:text-slate-200">First Name</label>
+                <input type="text" placeholder="John" className="w-full bg-gray-50 dark:bg-slate-800/50 border border-gray-200 dark:border-slate-700/50 rounded-xl px-4 py-3 text-sm text-gray-800 dark:text-slate-100 placeholder:text-gray-400 dark:placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition-all" />
               </div>
               <div className="space-y-2">
-                <label className="text-sm font-semibold text-gray-900">Last Name</label>
-                <input type="text" placeholder="Doe" className="w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition-all" />
+                <label className="text-sm font-semibold text-gray-900 dark:text-slate-200">Last Name</label>
+                <input type="text" placeholder="Doe" className="w-full bg-gray-50 dark:bg-slate-800/50 border border-gray-200 dark:border-slate-700/50 rounded-xl px-4 py-3 text-sm text-gray-800 dark:text-slate-100 placeholder:text-gray-400 dark:placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition-all" />
               </div>
             </div>
             
             <div className="space-y-2">
-              <label className="text-sm font-semibold text-gray-900">Email Address</label>
-              <input type="email" placeholder="john@example.com" className="w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition-all" />
+              <label className="text-sm font-semibold text-gray-900 dark:text-slate-200">Email Address</label>
+              <input type="email" placeholder="john@example.com" className="w-full bg-gray-50 dark:bg-slate-800/50 border border-gray-200 dark:border-slate-700/50 rounded-xl px-4 py-3 text-sm text-gray-800 dark:text-slate-100 placeholder:text-gray-400 dark:placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition-all" />
             </div>
 
             <div className="space-y-2">
-              <label className="text-sm font-semibold text-gray-900">Subject</label>
-              <input type="text" placeholder="How can we help?" className="w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition-all" />
+              <label className="text-sm font-semibold text-gray-900 dark:text-slate-200">Subject</label>
+              <input type="text" placeholder="How can we help?" className="w-full bg-gray-50 dark:bg-slate-800/50 border border-gray-200 dark:border-slate-700/50 rounded-xl px-4 py-3 text-sm text-gray-800 dark:text-slate-100 placeholder:text-gray-400 dark:placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition-all" />
             </div>
 
             <div className="space-y-2">
-              <label className="text-sm font-semibold text-gray-900">Message</label>
-              <textarea placeholder="Write your message here..." rows={5} className="w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition-all resize-none"></textarea>
+              <label className="text-sm font-semibold text-gray-900 dark:text-slate-200">Message</label>
+              <textarea placeholder="Write your message here..." rows={5} className="w-full bg-gray-50 dark:bg-slate-800/50 border border-gray-200 dark:border-slate-700/50 rounded-xl px-4 py-3 text-sm text-gray-800 dark:text-slate-100 placeholder:text-gray-400 dark:placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition-all resize-none"></textarea>
             </div>
 
             <button type="button" className="w-full bg-blue-500 hover:bg-blue-600 text-white rounded-xl px-4 py-3.5 text-sm font-semibold transition-colors flex items-center justify-center gap-2 shadow-sm">
@@ -73,13 +73,13 @@ export default function ContactUs() {
 
 function InfoCard({ icon, title, detail }: { icon: React.ReactNode, title: string, detail: string }) {
   return (
-    <div className="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm flex items-start gap-4">
-      <div className="w-12 h-12 rounded-xl bg-gray-50 flex items-center justify-center shrink-0">
+    <div className="bg-white dark:bg-slate-900/60 rounded-2xl p-6 border border-gray-100 dark:border-slate-800/40 shadow-sm flex items-start gap-4">
+      <div className="w-12 h-12 rounded-xl bg-gray-50 dark:bg-slate-800 flex items-center justify-center shrink-0">
         {icon}
       </div>
       <div>
-        <h3 className="font-bold text-gray-900 mb-1">{title}</h3>
-        <p className="text-sm text-gray-500 leading-relaxed">{detail}</p>
+        <h3 className="font-bold text-gray-900 dark:text-slate-100 mb-1">{title}</h3>
+        <p className="text-sm text-gray-500 dark:text-slate-400 leading-relaxed">{detail}</p>
       </div>
     </div>
   );

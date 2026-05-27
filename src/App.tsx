@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import Header from './Header';
 import Hero from './Hero';
 import Destinations from './Destinations';
@@ -397,7 +397,7 @@ function PromoCard({ title, subtitle, iconType, iconBg, iconColor }: { title: st
   );
 }
 
-function PropertyCard({ property, onSelect }: { property: any, onSelect: (prop: any) => void }) {
+function PropertyCard({ property, onSelect }: { property: any, onSelect: (prop: any) => void, key?: any }) {
   return (
     <div 
       onClick={() => onSelect(property)}
