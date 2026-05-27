@@ -127,7 +127,7 @@ export default function Header({ page = 'accommodations', setPage }: { page?: st
 
           {/* Glass Theme Toggle Switch */}
           <div 
-            className="relative flex items-center cursor-pointer shrink-0"
+            className="theme-toggle-container relative flex items-center cursor-pointer shrink-0"
             onClick={() => setIsDark(!isDark)}
             style={{ WebkitTapHighlightColor: 'transparent' }}
             title={isDark ? "Switch to Light Mode" : "Switch to Dark Mode"}

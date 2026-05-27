@@ -24,11 +24,8 @@
 body {
   @apply antialiased text-gray-800 bg-gray-50;
 }
-
 /* Premium global theme transitions */
-body, header, section, main, footer,
-.min-h-screen, .bg-white, .bg-gray-100, .bg-gray-50,
-h1, h2, h3, h4, p, a, button:not(.relative), input {
+*:not(.theme-toggle-container *):not(.theme-toggle-container) {
   transition: background-color 0.4s ease, border-color 0.4s ease, color 0.4s ease, box-shadow 0.4s ease;
 }
 
