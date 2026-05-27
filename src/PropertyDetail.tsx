@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { 
   ArrowLeft, Star, MapPin, Wifi, Waves, Coffee, Car, 
   Plus, Minus, ShieldCheck, CheckCircle2, Calendar, Users, 

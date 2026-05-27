@@ -1,3 +1,4 @@
+import React from 'react';
 import { Home, Building2, Ticket, Percent, Clock } from 'lucide-react';
 import { properties } from './data';
 

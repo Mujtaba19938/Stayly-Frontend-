@@ -1,3 +1,4 @@
+import React from 'react';
 import { Globe, Users, Shield, Target } from 'lucide-react';
 
 export default function AboutUs() {

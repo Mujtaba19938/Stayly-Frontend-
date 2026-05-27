@@ -1,3 +1,4 @@
+import React from 'react';
 import { Search, MapPin, Compass, Navigation } from 'lucide-react';
 
 interface DestinationsProps {

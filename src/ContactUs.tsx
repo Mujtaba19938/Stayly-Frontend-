@@ -1,3 +1,4 @@
+import React from 'react';
 import { Mail, Phone, MapPin, Send } from 'lucide-react';
 
 export default function ContactUs() {

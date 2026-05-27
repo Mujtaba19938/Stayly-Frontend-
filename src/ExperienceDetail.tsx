@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { 
   ArrowLeft, Star, Clock, MapPin, Plus, Minus, 
   Calendar, Users, DollarSign, CheckCircle2, Ticket,
