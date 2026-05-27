@@ -1,0 +1,8 @@
+{
+  "name": "Stayly - Accommodation Booking",
+  "description": "A modern accommodation booking platform UI recreating the Stayly design.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
